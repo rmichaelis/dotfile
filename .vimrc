@@ -19,3 +19,7 @@ set undolevels=500
 " appearance options
 set t_Co=256
 colorscheme molokai
+
+set guifont=Inconsolota-dz\ for\ Powerline
+let g:Powerline_symbols = 'fancy'
+let g:airline_powerline_fonts = 1
