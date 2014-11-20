@@ -54,6 +54,8 @@ set laststatus=2
 set number
 set pastetoggle=<F2>
 
+set mouse=a
+
 " Leader
 let mapleader = ","
 
