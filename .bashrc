@@ -1,5 +1,4 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
-
 export LESS='-q'
 export EDITOR=vim
 
@@ -23,8 +22,8 @@ if [ -d ~/bin ] ; then
    PATH=~/bin:"${PATH}"
 fi
 
-if [ -f /etc/bash_completion ]; then
-  . /etc/bash_completion
+if [ -f /etc/bash_completion.d/git ]; then
+  . /etc/bash_completion.d/git
 fi
 
 if [ -f ~/.bashrc_after ]; then
