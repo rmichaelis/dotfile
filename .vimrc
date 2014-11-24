@@ -24,6 +24,29 @@ set guifont=Inconsolota-dz\ for\ Powerline
 let g:Powerline_symbols = 'fancy'
 let g:airline_powerline_fonts = 1
 
+" Enable the list of buffers
+let g:airline#extensions#tabline#enabled = 1
+" Show just the filename
+let g:airline#extensions#tabline#fnamemod = ':t'
+
+function! WinMove(key) 
+      let t:curwin = winnr()
+        exec "wincmd ".a:key
+          if (t:curwin == winnr()) "we havent moved
+                  if (match(a:key,'[jk]')) "were we going up/down
+                            wincmd v
+                                else 
+                                          wincmd s
+                                              endif
+                                                  exec "wincmd ".a:key
+                                                    endif
+                                                endfunction
+
+noremap <C-J> :call WinMove('j')<cr>
+noremap <C-K> :call WinMove('k')<cr>
+noremap <C-L> <:call WinMove('l')<cr>
+noremap <C-H> <:call WinMove('h')<cr>
+
 " Security
 set modelines=0
 
