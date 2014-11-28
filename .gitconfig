@@ -8,6 +8,7 @@
 
 [core]
     excludesfile = ~/.global_gitignore
+    pager = less -r
 
 [alias]
     st = status
