@@ -3,7 +3,7 @@ export LESS='-q'
 export EDITOR=vim
 
 # You may uncomment the following lines if you want `ls' to be colorized:
-export LS_OPTIONS='-G'
+export LS_OPTIONS='-GAt'
 export HISTCONTROL=ignoredups
 #eval `dircolors`
 alias ls='ls $LS_OPTIONS'
