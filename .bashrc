@@ -14,6 +14,8 @@ alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 
+alias webserver='python -m SimpleHTTPServer 8081'
+
 if [ `id -u` -eq 0 ]; then
   export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/usr/bin/X11:/usr/games"
 fi
